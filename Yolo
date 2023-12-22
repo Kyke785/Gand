@@ -1,0 +1,51 @@
+local ArrayField = loadstring(game:HttpGet('https://raw.githubusercontent.com/UI-Interface/ArrayField/main/Source.lua'))()
+local Window = ArrayField:CreateWindow({
+    Name = "NO BOT VERIFICATION",
+    LoadingTitle = "PROVE UR NOT 🚫 BOT",
+    LoadingSubtitle = "by LUASCRIPTS",
+    ConfigurationSaving = {
+        Enabled = true,
+        FolderName = nil,
+        FileName = "AZZ"
+    },
+    Discord = {
+        Enabled = false,
+        Invite = "sirius",
+        RememberJoins = true
+    },
+    KeySystem = true,
+    KeySettings = {
+        Title = "VERIFY",
+        Subtitle = "Key System",
+        Note = "CLICK ON CLICK HEAR TO VERIFY AND KEY WILL COPY TO UR CLIPBOARD",
+        FileName = "VERIFIED",
+        SaveKey = false,
+        GrabKeyFromSite = false,
+        Key = {"UK7"},
+        Actions = {
+            [1] = {
+                Text = 'Click here to VERIFY',
+                OnPress = function()
+                    setclipboard("KEY-UK7")
+                end,
+            }
+        },
+    }
+})
+
+local Tab = Window:CreateTab("HOME", 4483362458)
+local Tab2 = Window:CreateTab("HOME")
+local Section = Tab:CreateSection("NOBOTS", false)
+Tab:CreateSpacing(nil, 10)
+
+local Button = Tab:CreateButton({
+    Name = "ENJOY",
+    Info = {
+        Title = 'THIS IS MAIN',
+        Description = 'CLICK BUTTON ONE TIME AND CLOSE THIS GUI AND U WILL SEE MAIN THING',
+    },
+    Interact = 'ok',
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Kyke785/NOBIT/main/Veryfy", true))()
+    end,
+})
