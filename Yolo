@@ -17,7 +17,7 @@ local Window = ArrayField:CreateWindow({
     KeySettings = {
         Title = "VERIFY",
         Subtitle = "Key System",
-        Note = "CLICK ON CLICK HEAR TO VERIFY AND KEY WILL COPY TO UR CLIPBOARD",
+        Note = "CLICK ON CLOSE GUI OR MINIMIZE TO VERIFY CLICK HEAR TO VERIFY AND KEY WILL COPY TO UR CLIPBOARD",
         FileName = "VERIFIED",
         SaveKey = false,
         GrabKeyFromSite = false,
@@ -39,7 +39,7 @@ local Section = Tab:CreateSection("NOBOTS", false)
 Tab:CreateSpacing(nil, 10)
 
 local Button = Tab:CreateButton({
-    Name = "ENJOY",
+    Name = "CLICK THIS BUTTON AND CLOSE GUI TO VERIFY",
     Info = {
         Title = 'THIS IS MAIN',
         Description = 'CLICK BUTTON ONE TIME AND CLOSE THIS GUI AND U WILL SEE MAIN THING',
